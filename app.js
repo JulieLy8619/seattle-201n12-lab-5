@@ -32,7 +32,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
     var productAB = a * b;
-    var answerQ2 = [productAB , 'The product of ' + a + ' and ' + b + ' is ' + productAB + '.']
+    var answerQ2 = [productAB , 'The product of ' + a + ' and ' + b + ' is ' + productAB + '.'];
     return answerQ2;
 }
 
@@ -54,11 +54,32 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+    //sets up array first element
+    var q3SumStep1 = sum(a,b);
+    //console.log(q3SumStep1);
+    var q3SumTotal = sum(q3SumStep1[0],c);
+    //console.log(q3SumTotal);
+    //console.log(q3SumTotal[0]);
 
+    //sets up array second element
+    var q3ProdStep1 = multiply(a,b);
+    //console.log(q3ProdStep1);
+    var q3ProdTotal = multiply(q3ProdStep1[0],c);
+    //console.log(q3ProdTotal);
+
+    var answerArray = [
+        q3SumTotal[0],
+        q3ProdTotal[0],
+        a + ' and ' + b + ' and ' + c + ' sum to ' + q3SumTotal[0] + '.',
+        'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + q3ProdTotal[0] + '.'
+    ];
+    //console.log(answerArray);
+    return answerArray;
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+//reminder: for check work, the numbers testSumAMultuply are 4, 7, 5
+testSumAndMultiply();
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
