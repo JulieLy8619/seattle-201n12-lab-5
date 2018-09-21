@@ -11,7 +11,7 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) { //eslint-disable-line
     var sumAB = a + b;
     //console.log(sumAB);
-    var answerQ1 = [sumAB , 'The sum of 4 and 7 is 11.'];
+    var answerQ1 = [sumAB , 'The sum of ' + a + ' and ' + b + ' is 11.'];
     //console.log(answerQ1);
     return answerQ1;
 }
