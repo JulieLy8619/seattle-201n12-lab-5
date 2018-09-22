@@ -97,6 +97,30 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+    //array cell 0 answer: sum of array
+    // var num1 = sumArr[0];
+    // var num2 = sumArr[1];
+    // var num3 = sumArr[2];
+
+    // for (var i = 0; i < sumArr.length; i++) {
+    //     sum(sumArr[i], sumArr[i+1]);
+
+    // }
+
+    var q4SumStep1 = sum(num1, num2);
+    var q4SumTotal = sum(q4SumStep1[0], num3);
+
+
+    //array cell 1 answer: sentence of array
+    for (var j = 0; j < sumArr.length; j++)
+
+    //array to return
+    var answerArray = [q4SumTotal[0], ];
+
+    return answerArray;
+
+
+
 
 }
 
