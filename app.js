@@ -102,11 +102,6 @@ function sumArray(sumArr) { //eslint-disable-line
     var num2 = sumArr[1];
     var num3 = sumArr[2];
 
-    // for (var i = 0; i < sumArr.length; i++) {
-    //     sum(sumArr[i], sumArr[i+1]);
-
-    // }
-
     var q4SumStep1 = sum(num1, num2);
     //console.log(q4SumStep1);
     var q4SumTotal = sum(q4SumStep1[0], num3);
@@ -140,11 +135,26 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+    //array cell 0 answer: product of array
+    var q5prodStep1 = multiply(multArr[0],multArr[1]);
+    //console.log(q5prodStep1);
+    var q5prodTotal = multiply(q5prodStep1[0],multArr[2]);
+    //console.log(q5prodTotal);
+
+    //array cell 1 answer: sentence of array
+    var q5sentence = 'The numbers ' + multArr[0] + ',' + multArr[1] + ',' + multArr[2] + ' have a product of ' + q5prodTotal[0] + '.'
+    //console.log(q5sentence);
+
+
+    //array to return
+    var answer5Array = [q5prodTotal[0], q5sentence];
+    //console.log(answerArray);
+    return answer5Array;
 
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
