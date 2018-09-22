@@ -97,12 +97,34 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+    //array cell 0 answer: sum of array
+    var num1 = sumArr[0];
+    var num2 = sumArr[1];
+    var num3 = sumArr[2];
 
+    // for (var i = 0; i < sumArr.length; i++) {
+    //     sum(sumArr[i], sumArr[i+1]);
+
+    // }
+
+    var q4SumStep1 = sum(num1, num2);
+    //console.log(q4SumStep1);
+    var q4SumTotal = sum(q4SumStep1[0], num3);
+    //console.log(q4SumTotal);
+
+    //array cell 1 answer: sentence of array
+    var q4sentence = num1 + ',' + num2 + ',' + num3 +  ' was passed in as an array of numbers, and ' + q4SumTotal[0] + ' is their sum.';
+
+    //array to return
+    var answerArray = [q4SumTotal[0], q4sentence];
+    //console.log(answerArray);
+    return answerArray;
+      
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
